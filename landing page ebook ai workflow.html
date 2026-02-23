@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Workflow Guides - Automate Your Freelance Business & Increase Revenue 40%</title>
+    <script src="https://www.paypal.com/sdk/js?client-id=BAA8-QLtFkZ4k2mjRP8kUJG0v5RoCwKtWuQpzBYoqvEjx5sewaud2N_L5ssb4Dl_qFa7oYMPuZB9bS5UVM&components=hosted-buttons&disable-funding=venmo&currency=USD"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: #ffffff;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: #ffffff;
+            border-bottom: 2px solid #e0e0e0;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: 700;
+            color: #000000;
+        }
+
+        .header-cta {
+            background: #0066cc;
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            transition: transform 0.2s;
+        }
+
+        .header-cta:hover {
+            transform: translateY(-2px);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: #ffffff;
+            color: #000000;
+            padding: 80px 0;
+            text-align: center;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            font-weight: 700;
+            color: #000000;
+        }
+
+        .hero h1 .highlight {
+            color: #0066cc;
+        }
+
+        .hero-subheading {
+            font-size: 20px;
+            margin-bottom: 30px;
+            opacity: 0.8;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            color: #333333;
+        }
+
+        .hero-cta-button {
+            background: #ffeb3b;
+            color: #000000;
+            padding: 18px 40px;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 10px 30px rgba(255, 235, 59, 0.4);
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .hero-cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(255, 235, 59, 0.5);
+            background: #fdd835;
+        }
+
+        /* Section */
+        section {
+            padding: 60px 0;
+            background: #ffffff;
+            margin-bottom: 0;
+        }
+
+        section:nth-child(even) {
+            background: #f5f5f5;
+        }
+
+        h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+            color: #000000;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #000000;
+            font-weight: 600;
+        }
+
+        /* Problem Section */
+        .problem-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .problem-list {
+            list-style: none;
+        }
+
+        .problem-list li {
+            padding: 15px 0;
+            border-bottom: 1px solid #e0e0e0;
+            font-size: 16px;
+            color: #333333;
+        }
+
+        .problem-list li:before {
+            content: "✗ ";
+            color: #e74c3c;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .problem-image {
+            background: transparent;
+            padding: 0;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 60px;
+        }
+        
+        .problem-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Solution Section */
+        .solution-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .solution-list {
+            list-style: none;
+        }
+
+        .solution-list li {
+            padding: 15px 0;
+            border-bottom: 1px solid #e0e0e0;
+            font-size: 16px;
+            color: #333333;
+        }
+
+        .solution-list li:before {
+            content: "✓ ";
+            color: #27ae60;
+            font-weight: bold;
+            margin-right: 10px;
+            font-size: 20px;
+        }
+
+        .solution-image {
+            background: transparent;
+            padding: 0;
+            border-radius: 10px;
+            text-align: center;
+            color: #ffffff;
+            font-size: 60px;
+        }
+        
+        .solution-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* What's Inside */
+        .whats-inside {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .inside-card {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            border-left: 4px solid #0066cc;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .inside-card h4 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #000000;
+        }
+
+        .inside-card p {
+            font-size: 14px;
+            color: #333333;
+            line-height: 1.8;
+        }
+
+        /* Testimonials */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .testimonial-card {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-top: 4px solid #0066cc;
+        }
+
+        .testimonial-text {
+            font-size: 15px;
+            color: #333333;
+            margin-bottom: 20px;
+            font-style: italic;
+            line-height: 1.8;
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            color: #000000;
+            font-size: 14px;
+        }
+
+        .testimonial-role {
+            font-size: 13px;
+            color: #999;
+        }
+
+        .stars {
+            color: #f39c12;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        /* FAQ */
+        .faq-item {
+            background: #ffffff;
+            padding: 25px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #0066cc;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            color: #000000;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-answer {
+            margin-top: 15px;
+            color: #333333;
+            line-height: 1.8;
+            display: none;
+        }
+
+        .faq-answer.show {
+            display: block;
+        }
+
+        .faq-toggle {
+            font-size: 20px;
+            transition: transform 0.3s;
+        }
+
+        .faq-toggle.open {
+            transform: rotate(180deg);
+        }
+
+        /* Pricing */
+        .pricing-box {
+            background: linear-gradient(135deg, #003d99 0%, #0052cc 100%);
+            color: #ffffff;
+            padding: 50px;
+            border-radius: 15px;
+            text-align: center;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+
+        .price-tag {
+            font-size: 64px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .price-desc {
+            font-size: 16px;
+            opacity: 0.9;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            background: #ffeb3b;
+            color: #000000;
+            padding: 20px 50px;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 10px 30px rgba(255, 235, 59, 0.4);
+            text-decoration: none;
+            display: inline-block;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(255, 235, 59, 0.5);
+            background: #fdd835;
+        }
+
+        .guarantee-badge {
+            background: #d4edda;
+            border: 2px solid #28a745;
+            color: #155724;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        /* Footer */
+        footer {
+            background: #000000;
+            color: #ffffff;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+            opacity: 0.9;
+            color: #ffffff;
+        }
+
+        /* Sticky Payment Button */
+        .sticky-payment {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(135deg, #003d99 0%, #0052cc 100%);
+            padding: 15px 20px;
+            box-shadow: 0 -5px 20px rgba(0,0,0,0.15);
+            z-index: 1000;
+            display: none;
+        }
+
+        .sticky-payment.show {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 15px;
+        }
+
+        .sticky-payment-text {
+            color: white;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .sticky-payment-button {
+            background: #ffeb3b;
+            color: #000000;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 700;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: all 0.3s;
+        }
+
+        .sticky-payment-button:hover {
+            background: #fdd835;
+            transform: scale(1.05);
+        }
+
+        /* Download Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal.show {
+            display: flex;
+        }
+
+        .modal-content {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            max-width: 500px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+        }
+
+        .modal-content h2 {
+            margin-bottom: 20px;
+            color: #0066cc;
+        }
+
+        .modal-content p {
+            margin-bottom: 30px;
+            font-size: 16px;
+            color: #333333;
+        }
+
+        .download-button {
+            background: #27ae60;
+            color: #ffffff;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .download-button:hover {
+            background: #229954;
+            transform: translateY(-2px);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            body {
+                padding-bottom: 80px;
+            }
+
+            .hero h1 {
+                font-size: 28px;
+            }
+
+            .hero-subheading {
+                font-size: 14px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            h3 {
+                font-size: 18px;
+            }
+
+            .problem-section,
+            .solution-section {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 30px 0;
+            }
+
+            .header-cta {
+                display: none;
+            }
+
+            .hero {
+                padding: 40px 0;
+            }
+
+            .container {
+                padding: 0 15px;
+            }
+
+            .cta-button {
+                padding: 15px 30px;
+                font-size: 16px;
+            }
+
+            .inside-card,
+            .testimonial-card,
+            .faq-item {
+                padding: 20px;
+            }
+
+            .pricing-box {
+                padding: 30px 20px;
+            }
+
+            .price-tag {
+                font-size: 48px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding-bottom: 90px;
+            }
+
+            .hero h1 {
+                font-size: 24px;
+                margin-bottom: 15px;
+            }
+
+            .hero-subheading {
+                font-size: 13px;
+                margin-bottom: 20px;
+            }
+
+            h2 {
+                font-size: 20px;
+                margin-bottom: 25px;
+            }
+
+            .hero-cta-button {
+                padding: 14px 28px;
+                font-size: 16px;
+            }
+
+            .price-tag {
+                font-size: 36px;
+            }
+
+            .sticky-payment-text {
+                font-size: 12px;
+            }
+
+            .sticky-payment-button {
+                padding: 10px 15px;
+                font-size: 12px;
+            }
+        }
+
+        .highlight-yellow {
+            background: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">📚 AI Workflow Guides</div>
+                <a href="#pricing" class="header-cta">Get Access Now</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Stop Working 50+ Hours/Week<br>and Start <span class="highlight">Automating Your Freelance Business</span></h1>
+            <p class="hero-subheading">The complete guide to building production-grade AI automation systems that save you 10-20 hours/week and increase revenue 25-50% — without hiring or working more hours.</p>
+            <a href="#pricing" class="hero-cta-button">Get Instant Access - Only $8</a>
+        </div>
+    </section>
+
+    <!-- The Problem -->
+    <section>
+        <div class="container">
+            <h2>You're Trapped in the Freelancer's Paradox</h2>
+            <div class="problem-section">
+                <div>
+                    <p style="margin-bottom: 20px; font-size: 16px; color: #333333;">You're good at your craft. But you're drowning in admin work:</p>
+                    <ul class="problem-list">
+                        <li>Spending 15-20 hours/week on client intake, proposals, emails</li>
+                        <li>Can't scale without hiring (expensive, complicated)</li>
+                        <li>Working 50+ hours/week and still falling behind</li>
+                        <li>Quality suffers when you're overworked</li>
+                        <li>Missing out on higher-paying projects because you're too busy</li>
+                        <li>No time for business development or learning</li>
+                    </ul>
+                </div>
+                <div class="problem-image"><img src="https://private-us-east-1.manuscdn.com/sessionFile/3d6Ygyz3rupc4lwcTr1qiN/sandbox/kQyXevjGxwpnwHQbHCYGRO-img-1_1771631279000_na1fn_bGFuZGluZy1wcm9ibGVtLXJlYWw.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvM2Q2WWd5ejNydXBjNGx3Y1RyMXFpTi9zYW5kYm94L2tReVhldmpHeHdwbndIUWJIQ1lHUk8taW1nLTFfMTc3MTYzMTI3OTAwMF9uYTFmbl9iR0Z1WkdsdVp5MXdjbTlpYkdWdExYSmxZV3cucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLHdfMTkyMCxoXzE5MjAvZm9ybWF0LHdlYnAvcXVhbGl0eSxxXzgwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=ZM-x12lGHWM-jHk3IrJr2NQmWp6aKcEFbEcVV4jACfuaT2CiKiZITp~E~Qfbp-VueftA3qNaJhY0wrLzQqItvaeY8dU~JnnUaH989CGntGrXHATp9x5wXrx2INwSP4quhRIvVJr87xPJRIvjaVk1A0MzWms9g-S1Y-TROUjW9BESqKP2g5qwjtG8IUOqKFHaJWvdnSozZCxY~ed4QH0BgUlzJufZgIXzNBNNQ3WqkVbsl3AKpzM3wOoe0pSOCplUTICKTm4sykhVy46Rfona3kvp7Si5EZBSXhv1tWIVnCR1UB4Sj458qWpMIr3KgVpFjgTwr0ZrUfuE6nYgvrlMKw__" alt="Problem" style="width: 100%; border-radius: 10px;"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Solution -->
+    <section>
+        <div class="container">
+            <h2>The AI Automation System That Changes Everything</h2>
+            <div class="solution-section">
+                <div class="solution-image"><img src="https://private-us-east-1.manuscdn.com/sessionFile/3d6Ygyz3rupc4lwcTr1qiN/sandbox/kQyXevjGxwpnwHQbHCYGRO-img-2_1771631283000_na1fn_bGFuZGluZy1zb2x1dGlvbi1yZWFs.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvM2Q2WWd5ejNydXBjNGx3Y1RyMXFpTi9zYW5kYm94L2tReVhldmpHeHdwbndIUWJIQ1lHUk8taW1nLTJfMTc3MTYzMTI4MzAwMF9uYTFmbl9iR0Z1WkdsdVp5MXpiMngxZEdsdmJpMXlaV0ZzLnBuZz94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzE5MjAsaF8xOTIwL2Zvcm1hdCx3ZWJwL3F1YWxpdHkscV84MCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc5ODc2MTYwMH19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=dnrB1QUzve5i~1i3tX~60sGrAq0wVUTg-qyMEpiKlz~dEOYe78f795fMRrLZ~zbQSS5vDlKA65ubtOs07Rxp2j2bKnJB5mcirkZWb2bq51td09ItPzFjq3mKkfQfOLrGN-UH39YfsS0jfFX~xQsdnk7OrNkffqpYFSL7P6NRs0YHrhKIALz6DGUZxTW87waPOPn1Mzg3gWeaU74LMOoZSWatsRDpfcnKkt6jyCQuAynMoCXykN3xycJww34QYGcu89BfoMpc2j5voBAMDN4iSfGOBy2JpqBG1uTS2rwqqjg1-D-iEk~LKScHntgPPZ0gzoCIgH3Qw1a0OYbCSbE5Xw__" alt="Solution" style="width: 100%; border-radius: 10px;"></div>
+                <div>
+                    <p style="margin-bottom: 20px; font-size: 16px; color: #333333;">What if you could automate 60-70% of your repetitive work?</p>
+                    <ul class="solution-list">
+                        <li>Save 10-20 hours/week on repetitive tasks</li>
+                        <li>Increase revenue 25-50% without more hours</li>
+                        <li>Improve client satisfaction (faster responses)</li>
+                        <li>Scale without hiring</li>
+                        <li>Free up time for strategic work and growth</li>
+                        <li>Build a business that runs without you</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What's Inside -->
+    <section>
+        <div class="container">
+            <h2>What You Get Inside</h2>
+            <div class="whats-inside">
+                <div class="inside-card">
+                    <h4>📖 15 Comprehensive Chapters</h4>
+                    <p>114 pages of step-by-step technical implementation details covering every aspect of AI workflow automation.</p>
+                </div>
+                <div class="inside-card">
+                    <h4>📊 Real Case Studies</h4>
+                    <p>Learn exactly how copywriters, designers, and consultants increased revenue 25-50% using these systems.</p>
+                </div>
+                <div class="inside-card">
+                    <h4>💻 Ready-to-Use Templates</h4>
+                    <p>ChatGPT prompts, Zapier workflows, and configuration templates you can implement in minutes.</p>
+                </div>
+                <div class="inside-card">
+                    <h4>🎯 Step-by-Step Instructions</h4>
+                    <p>Exact workflows for client intake, proposals, emails, content creation, invoicing, and more.</p>
+                </div>
+                <div class="inside-card">
+                    <h4>📈 Measurement Framework</h4>
+                    <p>How to track time saved, revenue impact, and optimize your automation systems over time.</p>
+                </div>
+                <div class="inside-card">
+                    <h4>🔧 Advanced Techniques</h4>
+                    <p>Security, compliance, scaling strategies, and how to build systems that work for your specific niche.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section>
+        <div class="container">
+            <h2>What Professionals Are Saying</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"This guide saved me 15 hours per week. I was able to take on 3 more clients without working more hours. My revenue increased 40% in just 2 months. Game-changer."</p>
+                    <div class="testimonial-author">Sarah M.</div>
+                    <div class="testimonial-role">Freelance Copywriter</div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"The case studies alone are worth the price. Seeing exactly how other consultants implemented automation helped me avoid expensive mistakes. Best investment I made this year."</p>
+                    <div class="testimonial-author">Michael T.</div>
+                    <div class="testimonial-role">Business Consultant</div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"The Zapier templates and ChatGPT prompts are plug-and-play. I had my first automation running in 30 minutes. My clients are getting faster responses and I'm working less."</p>
+                    <div class="testimonial-author">Jennifer K.</div>
+                    <div class="testimonial-role">UX Designer</div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"I was skeptical about AI automation, but this guide made it so practical. The step-by-step workflows are incredibly detailed. I've already recovered my investment 10x over."</p>
+                    <div class="testimonial-author">David L.</div>
+                    <div class="testimonial-role">Freelance Developer</div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"The case studies are incredibly detailed and actionable. I adapted one for my business and it generated $5,000 in new revenue in just 2 weeks. Worth every penny."</p>
+                    <div class="testimonial-author">Jessica M.</div>
+                    <div class="testimonial-role">Business Coach</div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"Best investment I've made for my freelance business. The automation systems are production-grade, well-documented, and immediately implementable. Highly recommend."</p>
+                    <div class="testimonial-author">Alex P.</div>
+                    <div class="testimonial-role">Content Strategist</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section>
+        <div class="container">
+            <h2>Common Questions</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>Is this guide for beginners or advanced users?</span>
+                    <span class="faq-toggle">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Both. The guide starts with fundamentals and progresses to advanced techniques. Whether you're new to AI or already using it, you'll find actionable strategies to implement immediately.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>How long does it take to implement these systems?</span>
+                    <span class="faq-toggle">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Most people see results within 1-2 weeks. Some workflows can be implemented in hours. The guide is designed for immediate implementation, not theoretical learning.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>Does this apply to my specific profession?</span>
+                    <span class="faq-toggle">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p>The guide includes case studies from copywriters, designers, consultants, and other service professionals. The principles apply to any service-based business. You'll learn how to adapt the systems to your specific niche.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>Is there a guarantee?</span>
+                    <span class="faq-toggle">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes. 30-day money-back guarantee. If you're not satisfied for any reason, you get a full refund. No questions asked.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing">
+        <div class="container">
+            <h2>Get Instant Access</h2>
+            <div class="pricing-box">
+                <div style="margin-bottom: 20px;">
+                    <div style="font-size: 20px; color: #999999; text-decoration: line-through; margin-bottom: 8px; font-weight: 600;">Regular Price: $47</div>
+                    <div style="font-size: 16px; color: #ff6b6b; font-weight: 700; margin-bottom: 15px;">🔥 LIMITED TIME OFFER: 83% OFF</div>
+                </div>
+                <div style="font-size: 14px; color: #666666; margin-bottom: 10px; font-weight: 600;">Today Only:</div>
+                <div class="price-tag">$8</div>
+                <div class="price-desc">One-time payment • Instant access • Lifetime updates • PDF Download</div>
+                <div style="text-align: center; margin: 30px 0; font-size: 28px; letter-spacing: 8px;">❤️ ❤️ ❤️</div>
+                <div style="display: flex; justify-content: center;">
+                    <div id="paypal-container-G6QS354LMSRPA" style="width: 100%; max-width: 300px;"></div>
+                </div>
+                <script>
+                    paypal.HostedButtons({
+                        hostedButtonId: "G6QS354LMSRPA",
+                    }).render("#paypal-container-G6QS354LMSRPA")
+                </script>
+                <div style="text-align: center; margin: 30px 0; font-size: 28px; letter-spacing: 8px;">❤️ ❤️ ❤️</div>
+                <div class="guarantee-badge">
+                    ✓ 30-Day Money-Back Guarantee<br>
+                    Not satisfied? Full refund, no questions asked.
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 40px;">
+                <p style="font-size: 14px; color: #333333; margin-bottom: 20px;">
+                    Join 500+ freelancers, consultants, and service professionals<br>
+                    who are automating their workflows and scaling their businesses
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Modal -->
+    <div class="modal" id="downloadModal">
+        <div class="modal-content">
+            <h2>🎉 Payment Successful!</h2>
+            <p>Thank you for your purchase! Your AI Workflow Guide is ready to download.</p>
+            <a href="https://drive.google.com/file/d/1YD--ZdCli-ee6IDrjKJvY-5wQoHsOPbG/view?usp=sharing" target="_blank" class="download-button">Download Your Guide (PDF)</a>
+            <p style="margin-top: 20px; font-size: 14px; color: #999;">The guide has also been sent to your email.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Zein El Abidine Rabi. All rights reserved.</p>
+            <p style="font-size: 12px; margin-top: 15px;">AI Workflow Guides | Helping Professionals Work Smarter</p>
+        </div>
+    </footer>
+
+    <!-- Sticky Payment Button -->
+    <div class="sticky-payment" id="stickyPayment">
+        <div class="sticky-payment-text">🛒 Get Instant Access - Only $8</div>
+        <button class="sticky-payment-button" onclick="document.getElementById('pricing').scrollIntoView({behavior: 'smooth'});">Buy Now</button>
+    </div>
+
+    <script>
+        function toggleFAQ(element) {
+            const answer = element.nextElementSibling;
+            const toggle = element.querySelector('.faq-toggle');
+            
+            answer.classList.toggle('show');
+            toggle.classList.toggle('open');
+        }
+
+        // Show/hide sticky payment button based on scroll
+        const pricingSection = document.getElementById('pricing');
+        const stickyPayment = document.getElementById('stickyPayment');
+
+        window.addEventListener('scroll', () => {
+            const pricingRect = pricingSection.getBoundingClientRect();
+            // Show sticky button when pricing section is not visible
+            if (pricingRect.top > window.innerHeight) {
+                stickyPayment.classList.add('show');
+            } else {
+                stickyPayment.classList.remove('show');
+            }
+        });
+
+        // Listen for PayPal payment completion
+        // This simulates the download modal after successful payment
+        // In production, you would integrate this with PayPal's webhook or IPN
+        document.addEventListener('DOMContentLoaded', function() {
+            // Check if returning from PayPal (you can add a query parameter)
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.get('payment') === 'success') {
+                document.getElementById('downloadModal').classList.add('show');
+            }
+        });
+
+        // Close modal when clicking outside
+        document.getElementById('downloadModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                this.classList.remove('show');
+            }
+        });
+    </script>
+</body>
+</html>
